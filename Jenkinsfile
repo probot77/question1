@@ -8,6 +8,7 @@ pipeline {
         }
         stage('Run Shell Script') {
             steps {
+		sh 'chmod +x displaytime.sh'
                 sh './displaytime.sh'
             }
         }
